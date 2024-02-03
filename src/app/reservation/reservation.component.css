@@ -1,0 +1,73 @@
+/* logements.component.css */
+.logement-item {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.logement-image img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.logement-details {
+  flex: 1;
+
+}
+
+h2 {
+  color: #333;
+}
+
+h3 {
+  color: #007BFF;
+}
+
+p {
+  color: #555;
+}
+
+
+.reservation-form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #007BFF;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,41 @@
+<!-- reservation.component.html -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="logement-item">
+        <div class="col-lg-8">
+          <img [src]="'http://localhost:8080/logement/imageLogement/' +logement.idlog" alt="Logement Image">
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <h1 class="modal-title">Réservation pour {{ logement.type }}</h1>
+            <br>
+            <br>
+            <p>Ville: {{ logement.ville }} </p>
+            <p> Description: {{ logement.description }}</p>
+            <p> Adresse: {{ logement.adress }}</p>
+            <p>Nombres des Places: {{ logement.places }}</p>
+            <p>Prix: {{ logement.prix }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulaire de réservation -->
+      <form class="reservation-form">
+        <h2>Réserver ce logement</h2>
+        <div class="form-group">
+          <label for="dateDebut">Date de début de location:</label>
+          <input type="date" id="dateDebut" name="dateDebut" >
+        </div>
+
+        <div class="form-group">
+          <label for="dateFin">Date de fin de location:</label>
+          <input type="date" id="dateFin" name="dateFin" >
+        </div>
+
+        <button type="submit">Réserver</button>
+      </form>
+    </div>
+  </div>
+</div>

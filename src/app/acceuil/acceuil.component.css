@@ -1,0 +1,32 @@
+/* logements.component.css */
+.logement-item {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.logement-image img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.logement-details {
+  flex: 1;
+
+}
+
+h2 {
+  color: #333;
+}
+
+h3 {
+  color: #007BFF;
+}
+
+p {
+  color: #555;
+}

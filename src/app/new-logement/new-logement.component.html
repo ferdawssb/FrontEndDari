@@ -1,0 +1,26 @@
+<!-- add-logement.component.html -->
+<h2>Ajouter un Logement</h2>
+<form [formGroup]="logementForm" (ngSubmit)="addLogement()">
+  <label for="type">Type :</label>
+  <input type="text" id="type" formControlName="type">
+
+  <label for="ville">Ville :</label>
+  <input type="text" id="ville" formControlName="ville">
+
+  <label for="description">Description :</label>
+  <textarea id="description" formControlName="description"></textarea>
+
+  <label for="adresse">Adresse :</label>
+  <input type="text" id="adresse" formControlName="adresse">
+
+  <label for="places">Nombres des Places :</label>
+  <input type="number" id="places" formControlName="places">
+
+  <label for="prix">Prix :</label>
+  <input type="number" id="prix" formControlName="prix">
+
+  <label for="photo"> Photo du Logement :</label>
+  <input type="file" id="photo" formControlName="photo" accept="image/*" >
+
+  <button type="submit" [disabled]="logementForm.invalid">Ajouter Logement</button>
+</form>

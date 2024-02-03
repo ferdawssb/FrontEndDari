@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+     </div>
+    <div class="col-md-12">
+   <div class="panel panel-default">
+      <div class="panel-heading">Liste des Logements </div>
+     <div class="panel-body">
+
+       <div class="=row" *ngIf="logements">
+
+         <div *ngFor="let logement of logements">
+           <div class="col-md-6">
+             <div class="panel panel-default " >
+               <div class="panel-heading">
+
+               {{logement.type}}
+
+               </div>
+
+               <div class="panel-body" >
+                 <div class="row">
+                   <div class="col-md-4">
+
+                     <img [src]="'http://localhost:8080/logement/imageLogement/'+logement.idlog" alt="Logement Image">
+
+                   </div>
+                   <div class="col-md-12">
+                     <ul class="list-group">
+                       <li class="list-group-item">
+                         <p>Ville:{{logement.ville}} </p>
+                         <p> Description :{{logement.description}}</p>
+                         <p> Adresse:{{logement.adress}}</p>
+                         <p>Nombres des Places: {{ logement.places }}</p>
+                         <p>Prix: {{ logement.prix }}</p>
+                         <button type="submit"  (click)="reserver(logement)">Réserver!</button>
+
+
+
+                       </li>
+                     </ul>
+
+                   </div>
+
+
+
+                 </div>
+
+
+
+               </div>
+             </div>
+
+
+             </div>
+
+
+         </div>
+
+
+
+
+
+       </div>
+     </div>
+   </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+
